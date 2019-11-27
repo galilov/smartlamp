@@ -1,0 +1,25 @@
+{
+  "name": "dialogflowFirebaseFulfillment",
+  "description": "Smart Lamp fulfillment for a Dialogflow agents using Cloud Functions for Firebase",
+  "version": "0.0.1",
+  "private": true,
+  "license": "Apache Version 2.0",
+  "author": "DIY AGalilov",
+  "engines": {
+    "node": "8"
+  },
+  "scripts": {
+    "start": "firebase serve --only functions:dialogflowFirebaseFulfillment",
+    "deploy": "firebase deploy --only functions:dialogflowFirebaseFulfillment"
+  },
+  "dependencies": {
+    "@google-cloud/iot": "^1.4.0",
+    "actions-on-google": "^2.2.0",
+    "cbor": "^5.0.1",
+    "dialogflow": "^0.6.0",
+    "dialogflow-fulfillment": "^0.5.0",
+    "firebase-admin": "^5.13.1",
+    "firebase-functions": "^3.3.0",
+    "uuid": "^3.3.3"
+  }
+}
